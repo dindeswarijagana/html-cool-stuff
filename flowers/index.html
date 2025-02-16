@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>something</title>
+    <style>
+      :root {
+        --pink: #e84393;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        text-transform: capitalize;
+        text-decoration: none;
+        box-sizing: border-box;
+      }
+      header {
+        display: flex;
+        margin: 30px;
+        border-bottom: 8px solid whitesmoke;
+        box-shadow: 0px 0px, 20px dimgray;
+      }
+      #flower {
+        padding-left: 100px;
+        padding-right: 600px;
+        font-weight: 900px;
+        display: block;
+        font-size: 40px;
+      }
+      nav > a {
+        display: inline;
+        text-decoration: none;
+        color: black;
+        padding-top: 90px;
+        padding-left: 5px;
+        padding-right: 50px;
+        font-size: 16px;
+        font-weight: 10px;
+      }
+      a > img {
+        width: 20px;
+        margin-left: 10px;
+      }
+      .icons:hover {
+        background-color: var(--pink);
+      }
+      section {
+        width: 1000px;
+        margin: auto;
+      }
+      .heading {
+        background-color: rgb(246, 227, 241);
+        width: 960px;
+      }
+      div > h1 {
+        margin: 50px;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 40px;
+      }
+      h1 > span {
+        color: var(--pink);
+      }
+      .product-card {
+        margin: 10px;
+        float: left;
+        width: 300px;
+        height: 350px;
+        border: 8px solid whitesmoke;
+        box-shadow: 8px, 8px, 200px black;
+        border-radius: 10px;
+      }
+      div > img {
+        width: 200px;
+        aspect-ratio: 1;
+        margin: 40px 40px 0px 40px;
+      }
+      .discount {
+        border: 1px solid white;
+        background-color: rgb(246, 227, 241);
+        position: absolute;
+        color: var(--pink);
+        border-width: 10px;
+      }
+      .flower-name {
+        text-align: center;
+        font-weight: 200px;
+        font-size: 30px;
+      }
+      #price {
+        display: inline-block;
+        text-align: center;
+        margin-left: 80px;
+        margin-top: 10px;
+      }
+      .crossed-price {
+        color: dimgray;
+        font-size: 16px;
+        display: inline-block;
+        text-decoration: line-through;
+      }
+      p > span {
+        color: #e84393;
+        padding: 5px;
+        font-size: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a id="flower">Flowers<span style="color: #e84393">.</span></a>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Products</a>
+        <a href="#">Review</a>
+        <a href="#">Contact</a>
+        <a href=""></a>
+      </nav>
+      <div>
+        <a href="#">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png"
+            alt="like"
+            class="icons"
+        /></a>
+        <a href="#">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/1170/1170678.png"
+            alt="cart"
+            class="icons"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/8143/8143259.png"
+            alt="contact"
+            class="icons"
+          />
+        </a>
+      </div>
+    </header>
+    <section>
+      <div class="heading">
+        <h1>latest <span>products</span></h1>
+      </div>
+      <div class="main-div">
+        <div class="product-card">
+          <p class="discount">-10%</p>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyL4OL-OeJtyOtlyppf7XG5vQBaQI-yth_gw&s"
+            alt="tulips"
+          />
+          <p class="flower-name">Flower Pot</p>
+          <p id="price"><span>$15.99</span></p>
+          <p class="crossed-price">$18.99</p>
+        </div>
+        <div class="product-card">
+          <p class="discount">-20%</p>
+          <img
+            src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfNl90ugsASGL_CMG-C3IyoMbKYw6Aeu0bnZoTErPpP2WI145-"
+            alt=""
+          />
+          <p class="flower-name">Flower Pot</p>
+          <p id="price"><span>$15.99</span></p>
+          <p class="crossed-price">$18.99</p>
+        </div>
+        <div class="product-card">
+          <p class="discount">-25%</p>
+          <img
+            src="https://res.cloudinary.com/dizexseir/image/upload/v1646927035/ProImages/gmq5resx4jiwdmct99ps.jpg"
+            alt=""
+          />
+          <p class="flower-name">Flower Pot</p>
+          <p id="price"><span>$15.99</span></p>
+          <p class="crossed-price">$18.99</p>
+
+          <p></p>
+        </div>
+      </div>
+      <div class="main-div">
+        <div class="product-card">
+          <p class="discount">-20%</p>
+          <img
+            src="https://file.aiquickdraw.com/imgcompressed/img/compressed_2af2e8878affcc56fcf01921822aa13d.webp"
+            alt=""
+          />
+          <p class="flower-name">Flower Pot</p>
+          <p id="price"><span>$15.99</span></p>
+          <p class="crossed-price">$18.99</p>
+        </div>
+        <div class="product-card">
+          <p class="discount">-15%</p>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV9z5f_bHh-jc1evwtp4B-l0OkOO8WY7xJ_g&s"
+            alt=""
+          />
+          <p class="flower-name">Flower Pot</p>
+          <p id="price"><span>$15.99</span></p>
+          <p class="crossed-price">$18.99</p>
+        </div>
+        <div class="product-card">
+          <p class="discount">-25%</p>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUeQC2mBxaNIw5vaLsaoDt-j8gikb2IiJZrw&s"
+            alt=""
+          />
+          <p class="flower-name">Flower Pot</p>
+          <p id="price"><span>$15.99</span></p>
+          <p class="crossed-price">$18.99</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
