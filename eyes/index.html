@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      .eyes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin: 100px auto;
+      }
+      .eye-container {
+        width: 200px;
+        height: 400px;
+        border: 1px solid black;
+        border-radius: 50%;
+        background-color: black;
+        /* margin: 100px auto; */
+        display: flex;
+        justify-content: center;
+        align-items: end;
+      }
+      #inner-part {
+        width: 120px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      #eye-ball {
+        width: 50px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background-color: black;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="eyes">
+      <div class="eye-container">
+        <div id="inner-part">
+          <div id="eye-ball"></div>
+        </div>
+      </div>
+      <div class="eye-container">
+        <div id="inner-part">
+          <div id="eye-ball"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const leftEyeBallPos = document.querySelectorAll("#eye-ball")[0];
+      const rightEyeBallPos = document.querySelectorAll("#eye-ball")[1];
+      const leftEyeBallXPosition = leftEyeBallPos.getBoundingClientRect().x;
+      const leftEyeBallYPosition = leftEyeBallPos.getBoundingClientRect().y;
+      const rightEyeBallXPosition = rightEyeBallPos.getBoundingClientRect().x;
+      const rightEyeBallYPosition = rightEyeBallPos.getBoundingClientRect().y;
+      document.addEventListener("mousemove", (event) => {
+        const mouseX = event.clientX;
+        const mouseY = event.clientY;
+
+        console.log(mouseX, mouseY);
+
+        if (mouseY < leftEyeBallYPosition) {
+          leftEyeBallPos.style.top = "40px";
+          rightEyeBallPos.style.top = "40px";
+        }
+        if (mouseY > leftEyeBallYPosition) {
+          leftEyeBallPos.style.top = "100px";
+          rightEyeBallPos.style.top = "100px";
+        }
+
+        if (mouseX > leftEyeBallXPosition) {
+          leftEyeBallPos.style.left = "70px";
+          rightEyeBallPos.style.left = "70px";
+        }
+
+        if (mouseX < leftEyeBallXPosition) {
+          leftEyeBallPos.style.left = "0px";
+          rightEyeBallPos.style.left = "0px";
+        }
+      });
+    </script>
+  </body>
+</html>

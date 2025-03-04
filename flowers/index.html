@@ -14,10 +14,15 @@
         box-sizing: border-box;
       }
       header {
+        height:80px;
         display: flex;
-        margin: 30px;
+        align-items:center;
+        justify-content: space-around;
         border-bottom: 8px solid whitesmoke;
         box-shadow: 0px 0px, 20px dimgray;
+      }
+      .logo{
+        font-size:50px;
       }
       #flower {
         padding-left: 100px;
@@ -33,12 +38,12 @@
         padding-top: 90px;
         padding-left: 5px;
         padding-right: 50px;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 10px;
       }
-      a > img {
-        width: 20px;
-        margin-left: 10px;
+      .icons {
+        width:36px
+        /* margin-left: 10px; */
       }
       .icons:hover {
         background-color: var(--pink);
@@ -135,7 +140,9 @@
   </head>
   <body>
     <header>
-      <a id="flower">Flowers<span style="color: #e84393">.</span></a>
+      <div class="logo">
+        <span>🌸 Flowers</span>
+      </div>
       <nav>
         <a href="#">Home</a>
         <a href="#">About</a>
