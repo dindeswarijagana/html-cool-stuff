@@ -3,12 +3,15 @@
   <head>
     <title>Document</title>
     <style>
+      body {
+        margin: 200px auto;
+      }
       .eyes {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 50px;
-        margin: 100px auto;
+        margin: 10px auto;
       }
       .eye-container {
         width: 200px;
@@ -41,18 +44,21 @@
     </style>
   </head>
   <body>
-    <div class="eyes">
-      <div class="eye-container">
-        <div id="inner-part">
-          <div id="eye-ball"></div>
+    <div>
+      <div class="eyes">
+        <div class="eye-container">
+          <div id="inner-part">
+            <div id="eye-ball"></div>
+          </div>
         </div>
-      </div>
-      <div class="eye-container">
-        <div id="inner-part">
-          <div id="eye-ball"></div>
+        <div class="eye-container">
+          <div id="inner-part">
+            <div id="eye-ball"></div>
+          </div>
         </div>
       </div>
     </div>
+
     <script>
       const leftEyeBallPos = document.querySelectorAll("#eye-ball")[0];
       const rightEyeBallPos = document.querySelectorAll("#eye-ball")[1];
